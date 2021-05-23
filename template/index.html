@@ -1,0 +1,25 @@
+{% extends 'headerPage.html' %}
+
+{% block content%}
+
+<div class="container" style="text-align: center;"> 
+    <h2> Upload an image!</h2>
+
+    <form method="post" enctype="multipart/form-data" action="predictImage">
+
+        {% csrf_token %}
+
+        <div class="row" style="padding-top: 70px;">
+            <label for="fname">Upload Image File Here----:</label> 
+            <input name="filePath" type="file">
+        </div>  
+
+        <div class="row" style="padding: 20px;">
+            <input type="submit" value="Submit" >
+        </div>
+
+
+    </form>
+
+</div>
+{% endblock %}

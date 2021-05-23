@@ -1,0 +1,14 @@
+{% extends 'headerPage.html' %}
+
+{% block content%}
+
+<div class="container"> 
+
+ <h2>This is an image of <b>{{predictedLabel}}</b></h2>
+ 
+ <div>
+    <img src={{filePathName}} alt='imagename' style="width:500px;height:600px;">
+ </div>
+
+</div>
+{% endblock %}
